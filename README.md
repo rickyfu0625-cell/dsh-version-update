@@ -9,7 +9,7 @@ DeepSeek Harness 的「版本与更新」永久插件。
 - 显示当前安装的 dsh 版本；
 - 「检查更新」：对比 npm registry 上 `@deepseek-ai/dsh` 的最新版本；
 - 发现新版本后出现「立即更新」：把「升级 + 重启」命令复制到剪贴板并弹出 toast，到终端粘贴执行即可
-  （命令形如 `npm install -g @deepseek-ai/dsh@<版本> --prefix <安装前缀> && dsh web`）。
+  （命令形如 `npm install -g @deepseek-ai/dsh@<版本> --prefix <安装前缀> && launchctl kickstart -k gui/$(id -u)/com.deepseek.dsh.web`）。
 
 中英双语，跟随界面语言与亮/暗主题。
 
